@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: radial-gradient(circle, #1e1e2f, #0f0f1a);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 35px;
+  border-radius: 15px;
+  text-align: center;
+  width: 350px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 30px rgba(0,0,0,0.6);
+}
+
+h1 {
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+#display {
+  font-size: 2.5rem;
+  margin: 20px 0;
+  font-weight: bold;
+  color: #00ffc6;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+button {
+  flex: 1;
+  margin: 5px;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#start { background: #00c853; color: #fff; }
+#pause { background: #ffa000; color: #000; }
+#lap { background: #2979ff; color: #fff; }
+#reset { background: #d50000; color: #fff; }
+
+button:hover {
+  opacity: 0.85;
+  transform: scale(1.05);
+}
+
+.laps {
+  margin-top: 15px;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.laps ul {
+  list-style: none;
+}
+
+.laps li {
+  background: rgba(255,255,255,0.1);
+  padding: 8px;
+  margin: 5px 0;
+  border-radius: 6px;
+}
